@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import SearchBox from "./components/SearchBox";
 import "./style.css"
 import SearchResults from "./components/SearchResults";
+import axios from "axios";
 
 
 export default function  Search() {
@@ -12,10 +13,19 @@ export default function  Search() {
 
     useEffect(() => {
          const getUsers = async () => {
+
+            try {
+                /*Metodo nativo para API
+                const respose = await fetch("https://jsonplaceholder.typicode.com/users")
+                const data = await respose.json();*/
+                const { data } = await axios.get("https://jsonplaceholder.typicode.com/users");
+                setData(data);
+                
+            } catch (err) {
+                console.error(err);
+            }
+ 
             
-            const respose = await fetch("https://jsonplaceholder.typicode.com/users")
-            const data = await respose.json();
-            setData(data);
 
          }; 
          getUsers().catch(null);

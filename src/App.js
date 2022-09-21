@@ -1,38 +1,48 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-function App() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [islogged, setIsLogged] = useState(false);
+const jsonData = [{
+  key: "1",
+  name: "Homero",
+}, {
+  key: "2",
+  name: "Cabrera",
+}, {
+  key: "3",
+  name: "Araque",
+}, {
+  key: "4",
+  name: "Alejandra",
+}, {
+  key: "5",
+  name: "Garzon",
+}];
 
-  //funcion para hacer reactiva la pagina
+const App = () => {
+  const [isLoading,   setIsLoading] = useState(true);
 
-  const handlerLoginClick = () => {
-    setIsLogged(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 4000);
+
+  }, []);
+  const renderData = () => {
+
+    return jsonData?.map((value, index) => (
+
+      <div key={value.key}>
+        <p>{value.name}</p>
+      </div>
+  ))
 
   }
- 
-
   return (
-    <div className="App">
-
-        <h2>Iniciar sesion</h2>
-        <lavel>
-          Correo
-          <input type="email" value={email} onChange={({target:{value}}) => setEmail(value)}/>
-        </lavel>
-        <br/><br/>
-        <lavel>
-          Password
-          <input type="Password" value={password} onChange={({target:{value}}) => setPassword(value)}/>
-        </lavel>
-        <br/><br/>
-        <button onClick={handlerLoginClick}>ENTER</button>
-        {islogged && <h2>Logueado exitosamente</h2>}
-
-
+    <div>
+      {isLoading ? <h2>Loading...</h2> : renderData()}
     </div>
+
   );
+ 
 }
 
 export default App;

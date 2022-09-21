@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/apuestas-control/static/css/main.6f14496e.css",
+    "main.js": "/apuestas-control/static/js/main.6a16c3c3.js",
+    "static/js/787.61b1c186.chunk.js": "/apuestas-control/static/js/787.61b1c186.chunk.js",
+    "index.html": "/apuestas-control/index.html",
+    "main.6f14496e.css.map": "/apuestas-control/static/css/main.6f14496e.css.map",
+    "main.6a16c3c3.js.map": "/apuestas-control/static/js/main.6a16c3c3.js.map",
+    "787.61b1c186.chunk.js.map": "/apuestas-control/static/js/787.61b1c186.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6f14496e.css",
+    "static/js/main.6a16c3c3.js"
+  ]
+}

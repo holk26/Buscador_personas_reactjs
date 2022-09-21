@@ -3,32 +3,33 @@ import { useState } from "react";
 function App() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [islogged, setIsLogged] = useState(false);
 
   //funcion para hacer reactiva la pagina
 
-  const handlerEmailChange = ({target:{value}}) => setEmail(value);
-  const handlerPasswordChange = ({target:{value}}) => setPassword(value);
-  const handlerFormSubmit = (event) => {
-    event.preventDefault();
-    console.log(email+password);
-    alert(email+password);
+  const handlerLoginClick = () => {
+    setIsLogged(true);
+
   }
  
 
   return (
     <div className="App">
-      <form onSubmit={handlerFormSubmit}>
+
         <h2>Iniciar sesion</h2>
         <lavel>
           Correo
-          <input type="email" value={email} onChange={handlerEmailChange}/>
+          <input type="email" value={email} onChange={({target:{value}}) => setEmail(value)}/>
         </lavel>
+        <br/><br/>
         <lavel>
           Password
-          <input type="Password" value={password} onChange={handlerPasswordChange}/>
+          <input type="Password" value={password} onChange={({target:{value}}) => setPassword(value)}/>
         </lavel>
-        <button type="submit">ENTER</button>
-      </form>
+        <br/><br/>
+        <button onClick={handlerLoginClick}>ENTER</button>
+        {islogged && <h2>Logueado exitosamente</h2>}
+
 
     </div>
   );

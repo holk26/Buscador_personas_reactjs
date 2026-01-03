@@ -83,6 +83,28 @@ npm run lint
 └── tsconfig.json    # TypeScript configuration
 ```
 
+## 🚀 Deployment
+
+This project is configured to deploy automatically to GitHub Pages.
+
+### Automatic Deployment
+
+Every push to the `main` branch triggers an automatic deployment to GitHub Pages via GitHub Actions.
+
+The site will be available at: [https://holk26.github.io/Buscador_personas_reactjs/](https://holk26.github.io/Buscador_personas_reactjs/)
+
+### Manual Deployment
+
+To deploy manually using gh-pages:
+
+```bash
+npm run deploy
+```
+
+This will build the project and push it to the `gh-pages` branch.
+
+**Note:** Make sure GitHub Pages is enabled in your repository settings and set to deploy from the `gh-pages` branch (for manual deployment) or GitHub Actions (for automatic deployment).
+
 ## 🔧 Technologies
 
 - [React](https://react.dev/) - UI library

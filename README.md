@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+# Buscador de Personas - React + TypeScript + Vite
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern React application built with TypeScript and Vite for fast development and optimal performance.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+- ⚡️ Vite 6 - Lightning fast build tool
+- ⚛️ React 18.3 - Latest React features
+- 🔷 TypeScript - Type safety and better DX
+- 🧪 Vitest - Fast unit testing
+- 🎨 ESLint - Code quality and consistency
+- 📦 Modern tooling and latest dependencies
 
-### `npm start`
+## 🛠️ Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Prerequisites
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Node.js 18+ 
+- npm 10+
 
-### `npm test`
+### Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm install
+```
 
-### `npm run build`
+### Development
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Run the development server:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm run dev
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The app will open automatically at [http://localhost:3000](http://localhost:3000)
 
-### `npm run eject`
+### Build
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Build for production:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm run build
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The optimized build will be in the `dist` folder.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Preview
 
-## Learn More
+Preview the production build:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm run preview
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Testing
 
-### Code Splitting
+Run tests:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+npm run test
+```
 
-### Analyzing the Bundle Size
+### Linting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Check code quality:
 
-### Making a Progressive Web App
+```bash
+npm run lint
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📁 Project Structure
 
-### Advanced Configuration
+```
+.
+├── public/          # Static assets
+├── src/
+│   ├── App.tsx      # Main App component
+│   ├── App.css      # App styles
+│   ├── main.tsx     # Application entry point
+│   └── index.css    # Global styles
+├── index.html       # HTML template
+├── vite.config.ts   # Vite configuration
+└── tsconfig.json    # TypeScript configuration
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🔧 Technologies
 
-### Deployment
+- [React](https://react.dev/) - UI library
+- [TypeScript](https://www.typescriptlang.org/) - Type safety
+- [Vite](https://vite.dev/) - Build tool
+- [Vitest](https://vitest.dev/) - Testing framework
+- [ESLint](https://eslint.org/) - Linting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📝 License
 
-### `npm run build` fails to minify
+This project is private.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
